@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Not_ortalama_hesaplama {
+	public static void main(String[] args){
+		int vize, ffinal;
+		double ortalama;
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vizenizi giriniz");
+		vize = input.nextInt();
+		System.out.println("Finalinizi giriniz");
+		ffinal = input.nextInt();
+		ortalama = (vize*0.3) + (ffinal*0.7);
+		System.out.println("Ortalamaniz:"+ ortalama);
+		String result = (ortalama >= 60) ? "Gectiniz" : "Gecemediniz";
+		System.out.println(result);
+	}
+}
